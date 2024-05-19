@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#navbar {
+  padding-right: 2rem;
+  padding-top: 1rem;
+  text-align: right;
+}
+
+#email {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#stopka {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 7em;
+}
+
+#stopka2 {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.container-fluid {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding: 1% 5%;
+}
+
+@media (min-width: 768px) {
+  #navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+  #navbar.fixed-top {
+    position: fixed;
+  }
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  transition: font-size 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  font-size: 30px;
+}
+
+#ikony {
+  display: flex;
+  justify-content: center;
+}
+
+#ikony img {
+  transition: transform 0.3s ease;
+}
+
+#ikony img:hover {
+  transform: scale(1.2);
+}
+
+.share-menu a {
+  display: inline-block;
+  width: 9em;
+  height: 3em;
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  border: 2px solid #333333;
+  font-size: 0.8rem;
+  border-radius: 260px;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
+  background: #ffffff;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  color: black !important;
+  font-weight: 500 !important;
+  margin-bottom: 0.3em;
+  transition: transform 0.3s ease; /* Dodanie płynnego przejścia dla transformacji */
+}
+
+.share-menu a:hover {
+  transform: scale(1.2); /* Powiększenie przycisku przy najechaniu */
+}
+
+#scrollTopButton {
+  border: 2px white solid;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(0, 0, 0);
+  height: 50px;
+  width: 50px;
+  color: white;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+  margin-left: 2em;
+}
+
+#copy-icon {
+  cursor: pointer;
+  transition: 0.3s ease; /* Płynne przejście koloru tła */
+}
+
+#copy-icon:hover {
+  transform: scale(1.2);
+}

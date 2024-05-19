@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foto blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/dist/css/lightbox.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container-fluid border">
+      <div class="row">
+        <div class="col-sm-12 col-md-3 fixed-top-custom" id="navbar">
+          <a href="http://127.0.0.1:5500/index.html">
+            <img
+              class="img-fluid"
+              src="/logo/Black Simple Capture Dream Photography Logo_20240518_110051_0000.png"
+              alt=""
+            />
+          </a>
+          <p>
+            <a href="https://www.google.pl/">Kup moje printy</a>
+            <br />
+            <a href="http://127.0.0.1:5500/about.html">O mnie</a>
+            <br />
+            <a href="https://www.google.pl/">Wynajmij mnie</a>
+          </p>
+          <!--Zaczyna sie div ikony-->
+          <div id="ikony" class="mt-5">
+            <a
+              href="https://www.instagram.com/katekornitzky?igsh=MTRqbmp3bnV0MnJiNA=="
+              class="icon-link mx-2"
+              id="ig"
+            >
+              <img src="/icons/icons8-instagram-100.png" alt="Instagram Icon" />
+            </a>
+            <a
+              href="https://www.facebook.com/KatarzynaKornitzky"
+              class="icon-link mx-2"
+            >
+              <img src="/icons/icons8-facebook-50.png" alt="Facebook Icon" />
+            </a>
+            <a
+              href="mailto:katarzyna.kornitzky@gmail.com"
+              class="icon-link mx-2"
+            >
+              <img src="/icons/icons8-email-50.png" alt="Email Icon" />
+            </a>
+            <!-- TUTAJ ZACZYNA SIE SHARE BUTTON -->
+            <a id="shareButton" class="icon-link mx-2" style="cursor: pointer">
+              <img src="/icons/icons8-share-50.png" alt="Share Icon" />
+            </a>
+            <div id="shareMenu" class="share-menu" style="display: none">
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/index.html"
+                target="_blank"
+                >Facebook</a
+              >
+              <a
+                href="https://api.whatsapp.com/send?text=TEKST_DO_UDOSTĘPNIENIA%20http://127.0.0.1:5500/index.html"
+                target="_blank"
+                >WhatsApp</a
+              >
+              <a
+                href="https://twitter.com/intent/tweet?text=
+Ich%20empfehle%20einen%20Fotografen&url=http://127.0.0.1:5500/index.html&über=TwojaNazwaUzytkownika"
+                target="_blank"
+                >Twitter</a
+              >
+              <a href="instagram://camera" target="_blank">Instagram</a>
+            </div>
+            <!-- TUTAJ KONCZY SIE SHARE BUTTON -->
+          </div>
+          <!--Konczy sie div ikony-->
+
+          <p class="justify-content: center mt-5" id="email">
+            katarzyna.kornitzky@gmail.com
+          </p>
+
+          <p id="stopka">J Julian De Rise Photography</p>
+          <p class="mt-2 mb-5" id="stopka2">Made with BŻ</p>
+        </div>
+        <div class="col-sm-12 col-md-9 offset-md-3 border" id="zdjecia">
+          <div class="row d-flex align-items-center">
+            <div class="col-6">
+              <div data-lightbox="galeria">
+                <img src="/images/IMG_4729.JPG" alt="" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col-6">
+              <h1>Stellen Sie mich ein!</h1>
+    <p>
+        Senden Sie mir eine Nachricht, wenn Sie Fragen haben oder ein individuelles Fotoshooting planen möchten. 
+        Ich habe viel Erfahrung und viele zufriedene Kunden. Ich biete eine umfassende Beratung vor dem Shooting, 
+        1-2 Stunden Vorbereitung und Aufnahmezeit sowie professionelle Nachbearbeitung an. 
+        Das Ergebnis sind 20 hochauflösende, in Lightroom bearbeitete Bilder. 
+        Wenn Ihr Projekt spezifische Anforderungen hat, lassen Sie es mich wissen, 
+        und ich bespreche gerne die Details mit Ihnen!
+    </p>
+
+    <h1>Teilen Sie diese Seite</h1>
+    <p>
+        Wenn Sie Fragen haben oder ein maßgeschneidertes Fotoshooting buchen möchten, 
+        senden Sie mir eine Nachricht. Mit meiner umfangreichen Erfahrung und vielen zufriedenen Kunden 
+        biete ich Ihnen eine professionelle Beratung vor dem Shooting, 1-2 Stunden für Vorbereitung und Aufnahme 
+        sowie eine sorgfältige Nachbearbeitung. Das Endergebnis sind 20 hochauflösende, in Lightroom bearbeitete Bilder. 
+        Sollte Ihr Projekt besondere Anforderungen haben, kontaktieren Sie mich gerne für eine ausführliche Besprechung!
+    </p>
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="scrollTopButton" class="btn btn-primary">Do góry</button>
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/dist/js/lightbox-plus-jquery.min.js"></script>
+  </body>
+</html>
